@@ -5,11 +5,13 @@
 		<link rel="stylesheet" type="text/css" href="stylesheet/index.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
-		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.css" />  
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.css" />
+
 		</head>
 
 	<body style="background-color: #eadca6">
     <header>
+      <div class="pageloader"></div>
 			<div class="navbar">
         <div id="logo-one">
           <img id="image" src="images/logo1.png" width="95%" height="100%" style="margin: 0;padding: 0;">
@@ -129,6 +131,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery.js"></script>
         <script type="text/javascript">
            $(document).ready(function() {
+             $('.pageloader').fadeOut(900, function () { $('.pageloader').removeClass('.pageloader'); });
            $(".lightgallery").lightGallery(); 
                });
          </script>

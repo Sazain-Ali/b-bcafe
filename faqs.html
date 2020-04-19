@@ -8,12 +8,20 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.pageloader').fadeOut(900, function () { $('.pageloader').removeClass('.pageloader'); });
+      });
+      $(document).ready(function () {
+
+      });
+    </script>
  
   </head>
   <body style="background-color: #e7eaf6">
     <!-- Header Starts -->
     <header>
+      <div class="pageloader"></div>
       <div class="navbar">
         <div id="logo-one">
          <img id="image" src="images/logo1.png" width="95%" height="100%" style="margin: 0;padding: 0;">
